@@ -182,6 +182,9 @@
         },
         "pixiv":
         {
+            "username": "★",
+            "password": "★",
+            "refresh-token": "★",
             "avatar": false,
             "translated-tags": false,
             "ugoira": true
@@ -238,11 +241,11 @@
         },
         "tumblr":
         {
-            "avatar": false,
-            "external": false,
+            "avatar": true,
+            "external": true,
             "inline": true,
             "posts": "all",
-            "reblogs": true
+            "reblogs": false
         },
         "twitter":
         {
@@ -252,8 +255,8 @@
             "conversations": false,
             "quoted": true,
             "replies": true,
-            "retweets": true,
-            "twitpic": false,
+            "retweets": false,
+            "twitpic": true,
             "videos": true
         },
         "unsplash":
