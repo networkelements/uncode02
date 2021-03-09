@@ -9,7 +9,7 @@ pause & exit/b
 
 $local_save_dir     = "G:\NEPlus\data"
 $tooldir            = "G:\NEPlus\Script\Gallery-dl"
-$historybin        = $env:userprofile + "\desktop\gallery-dl\!history.bin"
+$historybin         = "G:\NEPlus\Script\Gallery-dl\history.bin"
 
 ls $tooldir
 cd $tooldir ; git fetch upstream ; git checkout master ; git merge upstream/master ; cd $env:userprofile
