@@ -184,7 +184,6 @@
         {
             "username": "★",
             "password": "★",
-            "refresh-token": "★",
             "avatar": false,
             "translated-tags": false,
             "ugoira": true
