@@ -9,6 +9,7 @@ pause & exit/b
 
 $local_save_dir    = $env:userprofile + "\desktop\gallery-dl\"
 $tooldir           = $local_save_dir + "!01.dltool\uncode"
+$historybin　　　　= $env:userprofile + "\desktop\gallery-dl\!history.bin"
 
 ls $tooldir
 cd $tooldir ; git fetch upstream ; git checkout master ; git merge upstream/master ; cd $env:userprofile
@@ -18,8 +19,6 @@ $dllist          = $tooldir  + "\shellscript\gallerydl-tool\dlurlall.txt"
 $dluserlist = (get-content $dllist) -as [string[]]
 $i=1
 foreach ($dlurl in $dluserlist) {
-    gallery-dl $dlurl
+    gallery-dl $dlurl --download-archive $historybin -d $local_save_dir
     $i++
 }
-
-
