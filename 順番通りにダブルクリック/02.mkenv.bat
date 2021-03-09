@@ -20,8 +20,8 @@ pause & exit/b
 
 $galery_dl_confpath = "$env:userprofile\.config\gallery-dl\"
 $galery_dl_conf     = "config.json"
-$local_save_dir     = $env:userprofile + "\desktop\gallery-dl\"
-$tooldir            = $local_save_dir + "!01.dltool"
+$local_save_dir     = "G:\NEPlus\data"
+$tooldir            = "G:\NEPlus\Script\Gallery-dl"
 
 mkdir $local_save_dir
 mkdir $tooldir

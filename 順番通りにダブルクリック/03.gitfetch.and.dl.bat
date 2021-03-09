@@ -7,9 +7,9 @@ endlocal & Powershell -NoProfile -ExecutionPolicy RemoteSigned -Command "$input|
 pause & exit/b
 : #>
 
-$local_save_dir    = $env:userprofile + "\desktop\gallery-dl\"
-$tooldir           = $local_save_dir + "!01.dltool\uncode"
-$historybin　　　　= $env:userprofile + "\desktop\gallery-dl\!history.bin"
+$local_save_dir     = "G:\NEPlus\data"
+$tooldir            = "G:\NEPlus\Script\Gallery-dl"
+$historybin        = $env:userprofile + "\desktop\gallery-dl\!history.bin"
 
 ls $tooldir
 cd $tooldir ; git fetch upstream ; git checkout master ; git merge upstream/master ; cd $env:userprofile
